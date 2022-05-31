@@ -4,7 +4,7 @@
 
 <h2>📖 About</h2>
 
-<p> This was a small test of sending email using the [emailjs platform](https://www.emailjs.com/).
+<p> This was a small test of sending email using the <a href="https://www.emailjs.com/">emailjs platform</a>.
 </p>
 
 <h2>📱 Preview</h2>
@@ -14,7 +14,7 @@
    </p>
 
    <p align="center">
-      <img src=".github/notification.png" alt="App Demo">
+      <img src=".github/notification.jpg" alt="App Demo">
    </p>
 
 ---
@@ -22,7 +22,7 @@
 <h2 align="center">License 📝</h2>
 
 <p align="center">
-   This repository is under MIT license. You can see the <a href="https://github.com/felipecastrosales/send_mail/blob/master/LICENSE">LICENSE</a> file for more details. 😉
+   This repository is under MIT license. You can see the <a href="https://github.com/felipecastrosales/send-mail/blob/master/LICENSE">LICENSE</a> file for more details. 😉
 </p>
 
 ---

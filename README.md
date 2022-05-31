@@ -1,16 +1,34 @@
-# send_mail
+<h1 align="center">Send Mail</h1>
 
-A new Flutter project.
+---
 
-## Getting Started
+<h2>📖 About</h2>
 
-This project is a starting point for a Flutter application.
+<p> This was a small test of sending email using the [emailjs platform](https://www.emailjs.com/).
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+<h2>📱 Preview</h2>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+   <p align="center">
+      <img src=".github/demo.png" alt="App Demo">
+   </p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   <p align="center">
+      <img src=".github/notification.png" alt="App Demo">
+   </p>
+
+---
+
+<h2 align="center">License 📝</h2>
+
+<p align="center">
+   This repository is under MIT license. You can see the <a href="https://github.com/felipecastrosales/send_mail/blob/master/LICENSE">LICENSE</a> file for more details. 😉
+</p>
+
+---
+
+   <div align="center">
+
+   [![Linkedin Badge](https://img.shields.io/badge/-Felipe%20Sales-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/felipecastrosales/)](https://www.linkedin.com/in/felipecastrosales/)
+
+   </div>

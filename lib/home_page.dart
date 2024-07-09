@@ -3,10 +3,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-import 'keys.dart';
-
 class HomePage extends StatelessWidget {
-  HomePage({Key? key}) : super(key: key);
+  HomePage({super.key});
+
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
   final _emailController = TextEditingController();
@@ -67,7 +66,7 @@ class HomePage extends StatelessWidget {
                     width: 100,
                     child: TextButton(
                       style: TextButton.styleFrom(
-                        primary: Colors.white,
+                        foregroundColor: Colors.white,
                         backgroundColor: Colors.black87,
                       ),
                       onPressed: () {
@@ -78,6 +77,15 @@ class HomePage extends StatelessWidget {
                             message: _messageController.text,
                             subject: _subjectController.text,
                           );
+
+                          for (var controller in [
+                            _nameController,
+                            _emailController,
+                            _messageController,
+                            _subjectController
+                          ]) {
+                            controller.clear();
+                          }
                         }
                       },
                       child: const Text('Send'),
@@ -99,8 +107,6 @@ class HomePage extends StatelessWidget {
     required String subject,
   }) async {
     final url = Uri.parse('https://api.emailjs.com/api/v1.0/email/send');
-    // as this project is very simple and I wanted to make it available to the community, these private keys are simply in a 'keys' file and I added it to .gitignore.
-    // ! you can and should work it out better, because it's about security. !
     const serviceId = Keys.serviceId;
     const templateId = Keys.templateId;
     const userId = Keys.userId;
@@ -125,6 +131,7 @@ class HomePage extends StatelessWidget {
         },
       ),
     );
+
     return response;
   }
 
@@ -132,6 +139,14 @@ class HomePage extends StatelessWidget {
     if (value!.isEmpty) {
       return 'Invalid.';
     }
+
     return null;
   }
+}
+
+/// add respective values to the keys
+class Keys {
+  static const serviceId = '';
+  static const templateId = '';
+  static const userId = '';
 }
